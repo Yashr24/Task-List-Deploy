@@ -41,7 +41,7 @@ function TaskForm({ onClose, refreshTasks, editMode, taskData }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const url = editMode ? `http://localhost:5000/api/tasks/${taskData._id}` : 'http://localhost:5000/api/tasks';
+      const url = editMode ? `https://task-list-deploy-api.vercel.app/api/tasks/${taskData._id}` : 'https://task-list-deploy-api.vercel.app/api/tasks';
       const method = editMode ? 'PUT' : 'POST';
 
       const response = await fetch(url, {

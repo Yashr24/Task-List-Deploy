@@ -1,0 +1,179 @@
+.home-container {
+    text-align: center;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    outline: none;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%; /* Adjust as needed for your layout */
+    margin-top: 20px;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 50px;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  tbody td.entityName {
+    color: rgb(15, 105, 141);
+  }
+  
+  tbody td.default {
+    color: black;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .sort-icon {
+    margin-left: 8px; /* Adjust the margin as needed */
+  }
+  .filter-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust gap as needed */
+    position: relative;
+  }
+  
+  .filter-header select {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 0;
+    z-index: 1;
+  }
+  
+
+  .custom-save-button {
+    background-color: #ff4d4d; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding */
+    border-radius: 3px; /* Rounded corners */
+  }
+  
+  .custom-cancel-button {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding */
+    border-radius: 3px; /* Rounded corners */
+  }
+  
+  .me-3 {
+    margin-right: 1rem; /* Margin between buttons */
+  }
+  
+
+  .add-task-button {
+    background-color: #e5e9ee; /* Example background color */
+    color: rgb(12, 12, 12); /* Example text color */
+    border: 1px solid black; /* Black border */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 20px; /* Margin from the top */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Left alignment */
+  }
+  
+  .task-table-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .task-table-buttons button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-table-buttons button.edit-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .task-table-buttons button.duplicate-button {
+    background-color: #2196F3; /* Blue */
+    color: white;
+  }
+  
+  .task-table-buttons button.status-button {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .date{
+    text-align: left;
+  }
+
+  .addnote-button{
+    background-color: #daf39c;
+    color: rgb(21, 21, 21);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+  #taskTypeFilter {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    background-color:  #daf39c;
+    color: #0e0d0d; 
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #taskTypeFilter option {
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .filter{
+    cursor: pointer;
+  }

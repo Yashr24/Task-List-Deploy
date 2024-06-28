@@ -1,0 +1,32 @@
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Make the dropdown full width */
+  }
+  
+  .custom-dropdown select {
+    width: 100%; /* Ensure the select is full width */
+    padding-left: 30px; /* Adjust padding for icon */
+    appearance: none; /* Remove default styling */
+  }
+  
+  .custom-dropdown option {
+    display: flex;
+    align-items: center;
+    padding-left: 30px; /* Adjust padding for icon */
+  }
+  
+  .dropdown-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust position for icon */
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .custom-dropdown option::before {
+    content: attr(data-icon);
+    font-family: 'FontAwesome';
+    margin-right: 10px; /* Space between icon and text */
+  }
+  

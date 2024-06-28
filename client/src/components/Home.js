@@ -34,7 +34,7 @@ function Home() {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/list');
+      const response = await fetch('https://task-list-deploy-api.vercel.app/api/list');
       const data = await response.json();
       setTasks(data);
     } catch (error) {
@@ -77,7 +77,7 @@ function Home() {
 
       setTasks(updatedTasks);
 
-      await fetch(`http://localhost:5000/api/task/status/${taskId}`, {
+      await fetch(`https://task-list-deploy-api.vercel.app/api/task/status/${taskId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -118,7 +118,7 @@ function Home() {
 
       setTasks(updatedTasks);
 
-      await fetch(`http://localhost:5000/api/task/${currentTaskId}`, {
+      await fetch(`https://task-list-deploy-api.vercel.app/api/task/${currentTaskId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ function Home() {
 
       const duplicatedTask = { ...taskToDuplicate, _id: undefined };
 
-      const response = await fetch('http://localhost:5000/api/tasks', {
+      const response = await fetch('https://task-list-deploy-api.vercel.app/api/tasks', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
